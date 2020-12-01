@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <title></title>
+         <meta name="description" content="">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="styles.css">
+     </head>
+     <body>
+         <div class='container'>
+            <h1>Get National Parks by their State!</h1>
+            <p class="abb-msg">Here is a reference for the States and their abbreviations:</p>
+            <img src="./images/statelist.jpg" alt="States with their respective abbreviations" width="500" height="300">
+            <p class="abb-ins">Please enter the states abbreviation and the number of maximum desired results to see a list of parks in that state!</p>
+            <p>If you are searching for more than one state, please include a , and no spacing. for example: co,wi </p>
+            <form id="js-form">
+                <label for="search-term">Enter U.S. State Abbreviation</label>
+                <input type="text" name="search-state" id="js-search-state" required>
+                <input type="submit" value="Go!">
+                <br>
+                <label for="search-term">Enter maximum desired results</label>
+                <input type="number" name="max-results" id="js-max-results" value="10">
+            </form>
+            <p class="error-message"></p>
+         <section id="results" class="hidden">
+            <h2>Parks</h2>
+            <ul id="results-list">
+            </ul>
+         </section>
+        </div>
+         <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+         <script src="scripts.js" async defer></script>
+     </body>
+ </html>
